@@ -352,3 +352,5 @@ footer {
   justify-content: center ;
   color: #C6C4C4 ;   
 }
+footer p {
+  width: 80% ;
