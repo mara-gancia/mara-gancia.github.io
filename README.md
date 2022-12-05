@@ -3,7 +3,7 @@
   <title>Mara Gancia Portfolio</title>
   <script src="https://kit.fontawesome.com/6f0b2e9994.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://mara-gancia.github.io/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
