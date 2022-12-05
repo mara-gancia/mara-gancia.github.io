@@ -1,4 +1,4 @@
-<html lang="en">
+<html>
 <head>
   <title>Mara Gancia Portfolio</title>
   <script src="https://kit.fontawesome.com/6f0b2e9994.js" crossorigin="anonymous"></script>
