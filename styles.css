@@ -1,0 +1,354 @@
+* {
+  margin: 0 ;
+  padding: 0 ;
+  font-family: sans-serif ;
+}
+html {
+  scroll-behavior: smooth ;
+}
+body {
+  min-width: 320px ;
+  background-image: url(https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+  background-repeat: no-repeat ;
+  background-attachment: fixed ;
+  background-size: cover ;
+  background-position: center ;
+}
+p {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*NAV BAR*/
+#navbar {
+  width: 100% ;
+  height: 50px ;
+  position: fixed ;
+  top: 0 ;
+  z-index: 1 ;
+  background-color: white ;
+}
+#menus {
+  position: absolute ;
+  bottom: 15px ;
+  right: 20px ;
+}
+#menus a {
+  margin-left: 20px ;
+  text-decoration: none ;
+  color: gray ;
+}
+#menus a:hover {
+  font-weight: bold ;
+}
+
+/*WELCOME SECTION*/
+#welcome-section {
+  width: 100% ;
+  height: 100vh ;
+  color: white ;
+  text-align: center ;
+  position: relative ; 
+}
+
+#about-text {
+  position: absolute ;
+  left: 50% ;
+  top: 50% ;
+  transform: translate(-50%, -50%);
+}
+#about-text h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 48px ;
+}
+#about-text h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+#about-text h6 {
+  margin-top: 30px ;
+  letter-spacing: 10px ;
+}
+#about-text ul {
+  list-style-type: none ;
+  text-align: left ;
+  margin-top: 20px ;
+}
+#about-text li {
+  margin-bottom: 15px ;
+}
+.loading-bar {
+  margin-top: 3px;
+  width: 25vw ;
+  min-width: 100% ;
+  height: 7px ;
+  border: 1px solid white ;
+  position: relative ; 
+ 
+}
+.fill {
+  position: absolute ;
+  /*width: 75% ;*/
+  height: 7px ;
+  background: white ; 
+}
+.fill.html {
+  animation: fill-html 2s ease-in-out 1 forwards ;
+}
+@keyframes fill-html {
+  0% {
+    width: 0 ;
+  }
+  100% {
+    width: 55% ;
+  }
+
+}
+.fill.css {
+  animation: fill-css 2s ease-in-out 1 forwards;
+}
+@keyframes fill-css {
+  0% {
+    width: 0 ;
+  }
+  100% {
+    width: 55% ;
+  }
+
+}
+.fill.photoshop {
+  animation: fill-photoshop 2s ease-in-out 1 forwards ;
+}
+@keyframes fill-photoshop {
+  0% {
+    width: 0 ;
+  }
+  100% {
+    width: 90% ;
+  }
+
+}
+.fill.illustrator {
+  animation: fill-illustrator 2s ease-in-out 1 forwards ;
+}
+@keyframes fill-illustrator {
+  0% {
+    width: 0 ;
+  }
+  100% {
+    width: 85% ;
+  }
+
+}
+.fill.cinema {
+  animation: fill-cinema 2s ease-in-out 1 forwards ;
+}
+@keyframes fill-cinema {
+  0% {
+    width: 0 ;
+  }
+  100% {
+    width: 65% ;
+  }
+
+}
+
+/*PROJECTS*/
+#projects {
+  width: 90% ;
+  margin: 0 auto ;
+  background-color: black ;
+  overflow: hidden ;
+}
+#projects h2 {
+  color: white ;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px ;
+  margin-left: 10% ;
+  margin-top: 70px ;
+  
+}
+#project-container {
+  width: 80% ;
+  margin: 20px auto ;
+  text-align: center ;
+  display: flex ;
+  flex-flow: row wrap ;
+  justify-content: space-between ;
+  gap:20px ;
+
+}
+.project-tile {
+  width: 30% ;
+  height: 470px ;
+  background-color: transparent ;
+  color: #ececec ;
+  position: relative ;
+  overflow: hidden ;
+}
+@media only screen and (max-width:1200px) {
+  .project-tile {
+    width: 48% ;
+  }
+}
+@media only screen and (max-width:900px) {
+  .project-tile {
+    width: 100% ;
+  }
+}
+@media only screen and (max-width:500px) {
+  .project-tile {
+    width: 100% ;
+    height: 200px ;
+  }
+}
+.project-tile:hover {
+  background-color: violet ;
+}
+.project-tile img {
+  width: 100% ;
+  height: 100% ;
+  object-fit: cover ;
+  transition: transform 2s ;
+}
+.project-tile > a > img:hover {  
+  transform: scale(1.25) ;
+}
+@media only screen and (max-width:500px) {
+  .project-tile img {
+  width: 100% ;
+  height: 150px ;
+  object-fit: cover ;
+}
+}
+.project-tile:hover::before {
+  content: "Click the image for more" ;
+  position: absolute ;
+  left: 50% ;
+  bottom: 50% ;
+  transform: translate(-50%, -50%) ;
+  background-color: rgba(255, 255, 255, .6) ;
+  padding: 10px ;
+  border-radius: 8px ;
+  color: #565353 ;
+  z-index: 2 ;
+  font-family: 'Quicksand', sans-serif;
+}
+.proj-description {
+  width: 100% ;
+  height: 70px ;
+  position: absolute ;
+  bottom: 0 ;
+  background-color: black ;
+  display: flex ;
+  align-items: center ;
+  justify-content: center;
+
+}
+.hover-effect {
+  width: 100% ;
+  height: 100% ;
+  position: absolute ;
+  opacity: 0% ;
+}
+.hover-effect:hover {
+  opacity: 100% ;
+}
+
+/*CONTACT*/
+#bottom {
+  width: 100% ;
+  height: auto ;
+  position: relative ;
+  padding: 20px 0 ;
+  margin-top: 50px ;
+
+}
+#contact {
+  width: 80% ;
+  height: auto;
+  margin: 100px auto ;
+  /*border: 1px solid white ;*/
+  color: white ;
+  display: flex;
+  flex-flow: row wrap ;
+  justify-content: space-between ;
+}
+#info {
+  width:45% ;
+  border-right: 1px solid white ;
+  padding-right: 5% ;
+}
+#info img {
+  width:35% ;
+  float: left ;
+  margin: 0 20px 10px 0;
+}
+@media only screen and (max-width:900px) {
+  #info {
+    width: 100% ;
+    border-right: none ;
+    padding-right: 0 ;
+    border-bottom: 1px solid white ;
+    padding-bottom: 5% ;
+    margin-bottom: 30px ;
+  }
+}
+
+#socmed {
+  width:45% ;
+  /*border: 1px solid white ;*/
+  text-align: center ;
+  display: flex ;
+  flex-flow: row wrap ;
+  place-items: center center ;
+  justify-content: center ;
+  gap: 0 20px ;
+}
+#socmed h3 {
+  width: 100% ;
+  font-family:'Caveat', cursive;
+  font-size: 30px ;
+}
+
+i {
+  transform: scale(3) ;
+  display: inline-block ;
+  padding: 2px ;
+  color: white ;
+}
+i:hover {
+  color: pink ;
+  transform: scale(3.5) ;
+}
+
+.icon {
+  transform: scale(1) ;
+  position: relative ;
+}
+.icon p {
+  margin-top: 15px ;
+}
+@media only screen and (max-width:900px) {
+  #socmed {
+    width: 100% ;
+    gap: 40px 20px ;
+  }
+}
+#back {
+  width: 100% ;
+  height: 100% ;
+  position: absolute ;
+  background-color: darkblue ;
+  z-index: -1 ;
+  opacity: 30% ;
+  top: 0 ;
+  
+}
+footer {
+  background-color: black ;
+  width: 100% ;
+  height: 100px ;
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
+  color: #C6C4C4 ;   
+}
