@@ -5,7 +5,7 @@
    box-sizing: border-box ;
 }
 body {
-  min-width: 640px ;
+  min-width: 340px ;
 }
 h1, label, h3, h2, p {
  font-family: sans-serif ;
@@ -231,6 +231,11 @@ main {
   margin-top: 20px ;
   padding: 20px ;
   position: relative ;
+}
+
+#form2 input:nth-child(2) {
+  margin-bottom: 20px ;
+  
 }
 form h2, hr, p {
   margin-bottom: 20px ;
