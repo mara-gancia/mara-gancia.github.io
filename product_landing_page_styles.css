@@ -5,6 +5,10 @@
    box-sizing: border-box ;
 }
 
+body {
+	min-width: 640px ;
+}
+
 h1, label, h3, h2, p {
  font-family: sans-serif ;
 }
