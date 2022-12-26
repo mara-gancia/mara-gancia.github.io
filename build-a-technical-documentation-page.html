@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+                * {
+        margin:0;
+        padding:0;
+        font-family:sans-serif;
+        box-sizing:border-box;
+        }
+        body {
+        min-width:600px;
+        background: white ;
+        }
+        #main-doc {
+        min-width:400px;
+        width:69%;
+        height:100%;
+        float:right;
+        padding:20px;
+        }
+        section {
+        margin-bottom:40px;
+        }
+
+        section header {
+        font-weight:bold;
+        font-size:25px;
+        color: #662d91;
+        margin-bottom:10px;
+        }
+        p {
+        margin-left:20px;
+        color:#4d4d4d;
+        font-size:15px;
+        line-height:1.25;
+        }
+        ul {
+        margin:20px 0 20px 60px;
+        color:#4d4d4d;
+        font-size:15px;
+        line-height:1.25;
+        }
+        li {
+        margin-top:10px;
+        list-style-type:square;
+        
+        }
+        #navbar {
+        min-width:200px;
+        width:30%;
+        height:100%;
+        float:left;
+        position:fixed;
+        /*background-color:#2C2D47;*/
+        background-image:linear-gradient(45deg, #1b1464, #662d91 );
+        padding:20px;
+        overflow:hidden;
+        }
+        #navbar header {
+        font-weight:bold;
+        font-size:30px;
+        color:white;
+        margin:20px;
+        }
+        #navbar a {
+        display:block;
+        color:#eae4f2;
+        text-decoration:none;
+        border-bottom:1px solid #843ec1;
+        padding:20px;
+        }
+        #navbar a:hover {
+        background-color:#7830b7;
+        }
+        #navbar a:active {
+        background-color:#3f1563;
+        }
+        xmp {
+        margin:15px auto;
+        font-size:14px;
+        color:#4d4d4d;
+        width:80%;
+        font-family:Courier;
+        background-color:#f2f2f2;
+        padding:20px;
+        overflow:scroll;
+        }
+        .img {
+        width:80%;
+        margin:15px auto 20px;
+        border:1px solid #cccccc;
+        
+        }
+        .img img {
+        width:auto;
+        max-width:100%;
+        padding:20px;
+        object-fit:contain;
+        }
+        .reference {
+        width:100%;
+        height:50px;
+        text-align:center;
+        color:#4d4d4d;
+        font-size:15px;
+        }
+        .reference a {
+        display:inline-block;
+        color:#343670;
+        text-decoration:none;
+        border-bottom:none;
+        margin:none;
+        }
+        @media screen and (max-width:600px) {
+        #navbar {
+            min-width:600px;
+        width:100%;
+        height:260px;
+        float:none;
+        position:relative;
+        background-image:linear-gradient(60deg, #662d91, #1b1464 );
+        padding:20px;
+        overflow:hidden;
+        text-align:center;
+        }
+        #navbar header {
+        font-weight:bold;
+        font-size:30px;
+        color:white;
+        margin:15px;
+        }
+        #navbar a {
+        display:inline-block;
+        color:#eae4f2;
+        text-decoration:none;
+        border-bottom:1px solid #843ec1;;
+        /*border-right:1px solid #843ec1;*/
+        padding:10px 5px;
+        margin-right: 20px;
+        margin-top:10px;
+        }
+        #main-doc {
+        min-width:600px;
+        width:100%;
+        float:none;
+        height:auto;
+        padding:20px;
+        margin-top:20px;
+        margin-right:20px;
+        }
+
+        }
+  </style>
+  </head>
+<body>
+  <!--NAV BAR-->
+  <nav id="navbar">
+    <header>HTML BASICS</header>
+    <a class="nav-link" href="#INTRODUCTION">INTRODUCTION</a>
+    <a class="nav-link" href="#BASIC_HTML_DOCUMENT">BASIC HTML DOCUMENT</a>
+    <a class="nav-link" href="#HTML_HEADINGS">HTML HEADINGS</a>
+    <a class="nav-link" href="#HTML_PARAGRAPH">HTML PARAGRAPH</a>
+    <a class="nav-link" href="#HTML_HORIZONTAL_LINE">HTML HORIZONTAL LINE</a>
+    <a class="nav-link" href="#HTML_IMAGES">HTML IMAGES</a>
+    </nav>
+  
+ <!--MAIN-->
+  <main id="main-doc">
+    <section class="main-section" id="INTRODUCTION">
+
+<!--INTRODUCTION-->
+      <header>INTRODUCTION</header>
+      <p>In this article, we will see the HTML Basics by understanding all the basic stuff of HTML coding. There are various tags that we must consider and include while starting to code in HTML. These tags help in the organization and basic formatting of elements in our script or web pages. These step-by-step procedures will guide you through the process of writing HTML.</p>
+      </section>
+
+<!--BASIC HTML DOCUMENT-->
+    <section class="main-section" id="BASIC_HTML_DOCUMENT">
+      <header>BASIC HTML DOCUMENT</header>
+      <p>Below mentioned are the basic HTML tags that divide the whole document into various parts like head, body, etc.
+        </p>
+         <ul>
+        <li>Every HTML document begins with a HTML document tag. Although this is not mandatory, it is a good convention to start the document with this below-mentioned tag. Please refer to the HTML Doctypes article for more information related to Doctypes.</li>
+        <li><code><html></code> Every HTML code must be enclosed between basic HTML tags. It begins with <code><html></code> and ends with <code><html></code> tag.</li>
+        <li><code>head</code>: The head tag comes next which contains all the header information of the web page or documents like the title of the page and other miscellaneous information. This information is enclosed within the head tag which opens with &lt;head> and ends with &lt;/head>. The contents will of this tag will be explained in the later sections of the course.
+          <li><code>title</code>: We can mention the title of a web page using the &lt;title> tag. This is header information and hence is mentioned within the header tags. The tag begins with &lt;title> and ends with &lt;/title>.</li>
+          <li><code>body</code>: Next step is the most important of all the tags we have learned so far. The body tag contains the actual body of the page which will be visible to all the users. This opens with &lt;body> and ends with &lt;/body>. All content enclosed within this tag will be shown on the web page be it writings or images or audio or videos or even links. We will see later in the section how using various tags we may insert mentioned contents into our web pages.</li>
+        </ul>
+         <p>The whole pattern of the code will look something like the below code example.
+<br><br>
+<strong>Example:</strong> This example illustrates the HTML basic structure.</p>
+<xmp><html>
+ 
+<head>
+    <!-- Information about the page -->
+    <!--This is the comment tag-->
+     
+    <title>GeeksforGeeks</title>
+</head>
+ 
+<body>
+    <!--Contents of the webpage-->
+</body>
+ 
+</html></xmp>
+<p>This code won’t display anything. It just shows the basic pattern of how to write the HTML code and will name the title of the page as GeeksforGeeks. &lt;! – – comment here – – > is the comment tag in HTML and it doesn’t read the line present inside this tag.</p>
+      </section>
+
+<!--HTML HEADINGS-->
+    <section class="main-section" id="HTML_HEADINGS">
+      <header>HTML HEADINGS</header>
+      <p>These tags help us to give headings to the content of a webpage. These tags are mainly written inside the body tag. HTML provides us with six heading tags from &lt;h1> to &lt;h6>. Every tag displays the heading in a different style and font size.  
+<br><br>
+Most HTML heading tag that we use :</p>
+<ul>
+  <li>Heading 1</li>
+  <li>Heading 2</li>
+  <li>Heading 3</li>
+  </ul>
+  <p><strong>Example:</strong> This example illustrates the use of 6 heading tags from &lt;h1> to &lt;h6> in HTML.</p>
+  <xmp><html>
+ 
+<head>
+    <title>GeeksforGeeks</title>
+</head>
+ 
+<body>
+    <h1>Hello GeeksforGeeks</h1>
+    <h2>Hello GeeksforGeeks</h2>
+    <h3>Hello GeeksforGeeks</h3>
+    <h4>Hello GeeksforGeeks</h4>
+    <h5>Hello GeeksforGeeks</h5>
+    <h6>Hello GeeksforGeeks</h6>
+</body>
+ 
+</html></xmp>
+<p><strong>Output:</strong></p>
+<div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/head.jpg"></div>
+      </section>
+
+<!--HTML PARAGRAPH-->
+    <section class="main-section" id="HTML_PARAGRAPH">
+      <header>HTML PARAGRAPH</header>
+      <p>These tags help us to write paragraph statements on a webpage. They start with the &lt;p> tag and ends with &lt;/p>.  
+<br><br>
+<strong>HTML Break:</strong> – These tags are used for inserting a single line type break. It does not have any closing tag. In HTML the break tag is written as &lt;br>. 
+<br><br>
+<strong>Example:</strong> This example illustrates the use of the &lt;p> tag for writing a paragraph statement in HTML.</p>
+     
+<xmp><html>
+ 
+<head>
+    <title>GeeksforGeeks</title>
+</head>
+ 
+<body>
+    <h1>Hello GeeksforGeeks</h1>
+     
+ 
+ 
+<p> A Computer Science portal for geeks<br>
+        A Computer Science portal for geeks<br>
+        A Computer Science portal for geeks<br>
+    </p>
+ 
+ 
+ 
+ 
+</body>
+ 
+</html></xmp>
+<p><strong>Output:</strong></p>
+<div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/p-3.jpg" alt="paragraph_image"></div>
+ </section>
+
+<!--HTML HORIZONTAL LINE-->
+    <section class="main-section" id="HTML_HORIZONTAL_LINE">
+      <header>HTML HORIZONTAL LINE</header>
+      <p> The &lt;hr> tag is used to break the page into various parts, creating horizontal margins with help of a horizontal line running from the left to right-hand side of the page. This is also an empty tag and doesn’t take any additional statements.
+<br><br>
+<strong>Example:</strong> This example illustrates the use of the &lt;hr> tag for the horizontal line in HTML.</p>
+<xmp><html>
+ 
+<head>
+    <title>GeeksforGeeks</title>
+</head>
+ 
+<body>
+    <h1>Hello GeeksforGeeks</h1>
+     
+ 
+ 
+<p>
+        A Computer Science portal for geeks<br>
+        A Computer Science portal for geeks<br>
+        A Computer Science portal for geeks<br>
+    </p>
+ 
+ 
+ 
+ 
+    <hr>
+     
+ 
+ 
+<p>
+        A Computer Science portal for geeks<br>
+        A Computer Science portal for geeks<br>
+        A Computer Science portal for geeks<br>
+    </p>
+ 
+ 
+ 
+ 
+    <hr>
+     
+ 
+ 
+<p>
+        A Computer Science portal for geeks<br>
+        A Computer Science portal for geeks<br>
+        A Computer Science portal for geeks<br>
+    </p>
+ 
+ 
+ 
+ 
+    <hr>
+</body>
+ 
+</html></xmp>
+<p><strong>Output:</strong></p>
+<div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/hr-1.jpg" alt="horizontal_line_image"></div>
+      </section>
+
+<!--HTML IMAGES-->
+    <section class="main-section" id="HTML_IMAGES">
+      <header>HTML IMAGES</header>
+      <p>The image tag is used to insert an image into our web page. The source of the image to be inserted is put inside the &lt;img src=”source_of_image“> tag.
+<br><br>
+Image can be inserted in the image tag in two formats: </p>
+<ul>
+  <li>If the image is in the same folder, then we can just write the name of the image and the format as the path. </li>
+  <li>If the image is in another folder, then we do need to mention the path of the image and the image name as well as the format of the image. </li>
+  </ul>
+      <p><strong>Output:</strong></p>
+<div class="img"><img src="https://media.geeksforgeeks.org/wp-content/uploads/geek.png" alt="html_image"></div>
+      </section>
+      <section class="reference" id="reference">For more reference, visit <a href="https://www.geeksforgeeks.org/html-basics/?ref=lbp"><strong>Geeks for Geeks</strong></a> official website.</section>
+    </main>
+
+
+  </body>
+  </html>
+
+
+
+
