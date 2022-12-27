@@ -259,11 +259,23 @@ main {
 }
 
 #form {
-  border: 1px solid black ;
+  /*border: 1px solid black ;*/
   width: 100% ;
   height: auto ;
   display: flex ;
   align-items: center ;
+}
+@media only screen and (max-width: 640px) {
+  #form {
+    /*border: 1px solid black ;*/
+    width: 100% ;
+    height: auto ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    flex-direction: row ;
+    flex-wrap: wrap ;
+  }
 }
 
 #email {
@@ -273,12 +285,7 @@ main {
   border: 1px solid grey ;
   margin-left: 5px ;
 }
-@media only screen and (max-width: 640px) {
-  #email-box {
-    display: flex ;
-    align-items: center ;
-  }
-}
+
 #submit {
   height: 25px ;
   background-color: lightgrey ;
