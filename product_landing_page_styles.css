@@ -19,7 +19,26 @@ h3, p {
   top: 0 ;
   left: 0 ;
 }
-
+#nav-link {
+  width: 30px ;
+  height: 30px ;
+  background-image: url("https://iili.io/HIs7B49.png") ;
+  background-size: 80% ;
+  background-position: 50% 40%;
+  background-repeat: no-repeat ;
+  background-color: black ;
+  position: fixed ;
+  bottom: 10px ;
+  right: 10px ;
+  border-radius: 5px ;
+  display: none ;
+}
+@media only screen and (max-width: 640px) {
+  #nav-link {
+    display: block ;
+  }
+  
+}
 #header {
   width:100% ; 
   background-color:#e6e6e6 ;
@@ -38,8 +57,10 @@ h3, p {
 #header-img {
   width:150px;
   overflow: hidden;
-  grid-column: 1 ;
+  grid-column: 1 / 2 ;
 }
+
+
 
 #nav-bar {
   grid-column: 2 / 3 ;
@@ -91,6 +112,41 @@ li {
  #header-img {
    width: 100px ;
 }
+}
+@media only screen and (max-width: 640px) {
+  #header {
+    width:100% ; 
+    background-color:#e6e6e6 ;
+    padding: 10px ;
+    display: grid ;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    align-items: center ;
+    justify-items: center ;
+    position: relative ;
+    top: 0 ;
+    z-index: 1 ;
+    column-gap: 5px ;
+    row-gap: 5px ;
+  
+  }
+  #header-img {
+    width:100px;
+    overflow: hidden;
+    grid-column: 1 / 2 ;
+    grid-row: 1 / 2 ;
+  }
+
+  #nav-bar {
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3 ;
+  }
+
+  #social-icons {
+    grid-column: 1 / 2 ;
+    grid-row: 3 / 4 ;
+  }
+  
 }
 
 main {
@@ -201,12 +257,27 @@ main {
   color: #636468 ;
   
 }
+
+#form {
+  border: 1px solid black ;
+  width: 100% ;
+  height: auto ;
+  display: flex ;
+  align-items: center ;
+}
+
 #email {
   height: 25px ;
   padding: 5px ;
   border-radius: 10px ;
   border: 1px solid grey ;
   margin-left: 5px ;
+}
+@media only screen and (max-width: 640px) {
+  #email-box {
+    display: flex ;
+    align-items: center ;
+  }
 }
 #submit {
   height: 25px ;
@@ -226,31 +297,25 @@ main {
 }
 #form2 {
   width: 100% ;
-  height: calc(100% - 20px ) ;
+  height: auto ;
   border: 1px solid grey ;
   margin-top: 20px ;
   padding: 20px ;
   position: relative ;
 }
 
-#form2 input:nth-child(2) {
-  margin-bottom: 20px ;
-  
-}
-form h2, hr, p {
+#form2 h2, hr, p, input {
   margin-bottom: 20px ;
 
 }
 form span {
   border: 1px solid grey ;
   padding: 10px ;
-  margin-bottom: 20px ;
+  margin-bottom: 10px ;
 }
 #add-to-cart {
-  position: absolute;
+  position: relative;
   width: 100% ;
-  bottom: 0 ;
-  left: 0 ;
   background-color: #636468 ;
   border: none ;
   height: 50px ;
@@ -262,7 +327,7 @@ form span {
 #add-to-cart:hover {
   background-color: #E59CA3 ;
 }
-
+/*VIDEO*/
 #video-box {
   grid-column: 1 / 2 ;
   grid-row: 2 / 3 ;
