@@ -64,13 +64,14 @@ h3, p {
 
 #nav-bar {
   grid-column: 2 / 3 ;
+  text-align: center ;
   
 }
 
 .nav-link {
   display: inline-block;
   font-family: sans-serif ;
-  margin-right: 20px;
+  margin: 0 10px 0 10px ;
   font-size:14px;
 }
 
