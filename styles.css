@@ -352,3 +352,8 @@ footer {
   justify-content: center ;
   color: #C6C4C4 ;   
 }
+#cert {
+  font-weight: bold ;
+  color: white ;
+  text-decoration: none;
+}
