@@ -348,9 +348,13 @@ footer {
   background-color: black ;
   width: 100% ;
   height: auto ;
-  text-align: center ;
   padding: 20px ;
   color: #C6C4C4 ;   
+}
+footer p {
+   width: 80% ;
+   margin: auto ;
+   text-align: center ;
 }
 
 #cert {
